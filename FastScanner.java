@@ -1,10 +1,12 @@
 class FastScanner {
     public BufferedReader reader;
     public StringTokenizer tokenizer;
+    
     public FastScanner() {
         reader = new BufferedReader(new InputStreamReader(System.in), 32768);
         tokenizer = null;
     }
+    
     public String next() {
         while (tokenizer == null || !tokenizer.hasMoreTokens()) {
             try {
@@ -15,6 +17,7 @@ class FastScanner {
         }
         return tokenizer.nextToken();
     }
+    
     public int nextInt() {
         return Integer.parseInt(next());
     }
